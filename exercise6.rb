@@ -23,7 +23,7 @@ end
 
 
 
-grocery_list = ["carrots", "milk", "bananas", "oranges"]
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 print_list(grocery_list)
 
 puts " "
@@ -43,4 +43,7 @@ end
 
 puts " "
 puts grocery_list[1]
+
+puts " "
+puts grocery_list.sort
 
