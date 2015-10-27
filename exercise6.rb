@@ -42,8 +42,12 @@ else
 end
 
 puts " "
-puts grocery_list[1]
+puts "* #{grocery_list[1]}"
 
 puts " "
-puts grocery_list.sort
+print_list(grocery_list.sort)
+
+puts " "
+grocery_list.delete("salmon")
+print_list(grocery_list)
 
