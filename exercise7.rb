@@ -34,5 +34,8 @@ students.each do |cohort, size|
 end
 puts " "
 
+puts "The total amount of students in all the cohorts is #{students.values.inject{|sum, n| sum+n}}."
+puts " "
+
 students.delete(:cohort2)
 print_list(students)
