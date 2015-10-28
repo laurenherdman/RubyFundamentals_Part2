@@ -30,7 +30,9 @@ def increase(num)
 end
 
 students.each do |cohort, size|
-	puts "#{cohort}: #{increase(size)} students"
+	puts "#{cohort}: #{increase(size).to_i} students"
 end
+puts " "
 
-# students.delete
+students.delete(:cohort2)
+print_list(students)
