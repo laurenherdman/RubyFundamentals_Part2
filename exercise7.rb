@@ -9,15 +9,28 @@ students = {
 }
 
 
-def keys(class_size)
+def print_list(class_size)
 	class_size.each do |cohort, size|
 		puts "#{cohort}: #{size} students "
 	end
 end
 
-keys(students)
+print_list(students)
 puts " "
 
 students[:cohort4] = 43
+print_list(students)
+puts " "
 
-keys(students)
+puts students.keys
+puts " "
+
+def increase(num)
+	num*1.05
+end
+
+students.each do |cohort, size|
+	puts "#{cohort}: #{increase(size)} students"
+end
+
+# students.delete
