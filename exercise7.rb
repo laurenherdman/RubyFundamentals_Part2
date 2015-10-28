@@ -9,10 +9,15 @@ students = {
 }
 
 
-def print_size(class_size)
+def keys(class_size)
 	class_size.each do |cohort, size|
 		puts "#{cohort}: #{size} students "
 	end
 end
 
-print_size(students)
+keys(students)
+puts " "
+
+students[:cohort4] = 43
+
+keys(students)
